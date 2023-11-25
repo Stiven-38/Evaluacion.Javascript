@@ -1,0 +1,104 @@
+/* Establece estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('img/navidad.png'); /* Imagen de fondo */
+}
+
+/* Estilos para el encabezado principal (h1) */
+h1 {
+    color: whitesmoke;
+    font-weight: 1000000; /* Establece un peso de fuente extremadamente alto */
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #7272729b;
+    border: 1px solid #010000e7;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.988);
+}
+
+/* Estilos para las etiquetas dentro del formulario */
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: black;
+}
+
+/* Estilos para los elementos de entrada (select e input) dentro del formulario */
+select,
+input {
+    margin: 10px 0;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón dentro del formulario */
+button {
+    background-color: #fa0707;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Cambia el color del botón al pasar el ratón sobre él */
+button:hover {
+    background-color: #f58989;
+}
+
+/* Estilos para el resumen del pedido */
+#order-summary {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+    text-align: center;
+    background-color: #bfbfbf9b;
+    border: 1px solid #010000e7;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 28%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.988);
+}
+
+/* Estilos para la lista de artículos en el resumen del pedido */
+#order-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista en el resumen del pedido */
+#order-list li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el precio total en el resumen del pedido */
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0066cc;
+    background-color: #d9d8d89b;
+    border: 1px solid #010000e7;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 70px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.988);
+}

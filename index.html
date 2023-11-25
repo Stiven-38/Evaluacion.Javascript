@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración del documento HTML -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a la hoja de estilos externa -->
+    <script src="JS/Accesorios.js" defer></script> <!-- Inclusión de script JS con la carga diferida -->
+    <title>Tienda de Accesorios Navideños</title>
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <h1>Accesorios Navideños</h1>
+
+    <!-- Formulario de orden -->
+    <form id="order-form">
+        <!-- Seleccion de tipo de accesorio -->
+        <label for="tipoAccesorio">Tipo de Accesorio:</label>
+        <select id="tipoAccesorio" name="tipoAccesorio">
+            <option value="Árbol de Navidad">Árbol de Navidad</option>
+            <option value="Guirnalda">Guirnalda</option>
+            <option value="Adornos">Adornos</option>
+        </select>
+        <br>
+
+        <!-- Cantidad de accesorios -->
+        <label for="cantidadAccesorios">Cantidad de Accesorios:</label>
+        <input type="number" id="cantidadAccesorios" name="cantidadAccesorios">
+        <br>
+
+        <!-- Seleccion de tipo de decoración -->
+        <label for="decoracion">Decoración:</label>
+        <select id="decoracion" name="decoracion">
+            <option value="Luces">Luces</option>
+            <option value="Bolas">Bolas</option>
+            <option value="Estrellas">Estrellas</option>
+        </select>
+        <br>
+
+        <!-- Cantidad de decoración -->
+        <label for="cantidadDecoracion">Cantidad de Decoración:</label>
+        <input type="number" id="cantidadDecoracion" name="cantidadDecoracion">
+        <br>
+
+        <!-- Selección de tipo de peluche -->
+        <label for="tipoPeluche">Tipo de Peluche:</label>
+        <select id="tipoPeluche" name="tipoPeluche">
+            <option value="Renos">Renos</option>
+            <option value="Papa Noel">Papa Noel</option>
+            <option value="Oso">Oso</option>
+        </select>
+        <br>
+
+        <!-- Cantidad de peluches -->
+        <label for="cantidadPeluches">Cantidad de Peluches:</label>
+        <input type="number" id="cantidadPeluches" name="cantidadPeluches">
+        <br>
+
+        <!-- Selección de tipo de gorro navideño -->
+        <label for="tipoGorro">Tipo de Gorro Navideño:</label>
+        <select id="tipoGorro" name="tipoGorro">
+            <option value="Gorro con orejas">Gorro con orejas</option>
+            <option value="Gorro con Luces Led">Gorro con luces Led </option>
+            <option value="Gorro con cuernos">Gorro con cuernos</option>
+        </select>
+        <br>
+
+        <!-- Cantidad de gorros navideños -->
+        <label for="cantidadGorros">Cantidad de Gorros Navideños:</label>
+        <input type="number" id="cantidadGorros" name="cantidadGorros">
+        <br>
+
+        <!-- Boton para finalizar la compra -->
+        <button type="button" id="add-to-order">Finalizar compra</button>
+    </form>
+
+    <!-- Resumen del pedido -->
+    <div id="order-summary">
+        <!-- Encabezado del resumen del pedido -->
+        <h2>Resumen del Pedido</h2>
+        
+        <!-- Lista de artículos en el resumen del pedido -->
+        <ul id="order-list"></ul>
+        
+        <!-- Precio total en el resumen del pedido -->
+        <div id="total-price">Total: $0</div>
+    </div>
+
+    <!-- Script adicional para mostrar un mensaje de agradecimiento al hacer clic en el botón -->
+    <script>
+        document.getElementById('finalizarCompraBtn').addEventListener('click', function() {
+            alert('¡Gracias por tu compra!');
+        });
+    </script>
+</body>
+
+</html>
