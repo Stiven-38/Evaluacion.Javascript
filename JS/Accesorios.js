@@ -69,7 +69,7 @@ function calcularPrecio(tipo, categoria) {
         case "accesorio":
             // En el caso de accesorios evaluamos el tipo específico y devolvemos el precio correspondiente
             switch (tipo) {
-                case "Árbol de Navidad":
+                case "Arbol de Navidad":
                     return 200;
                 case "Guirnalda":
                     return 500;
@@ -153,7 +153,7 @@ document.getElementById('add-to-order').addEventListener('click', function () {
     // Agregar elementos a la lista de pedidos si la cantidad es mayor a 0
     if (cantidadAccesorios > 0) {
         var accesoriosItem = document.createElement('li');
-        accesoriosItem.textContent = `Árbol de Navidad x${cantidadAccesorios}: $${totalAccesorios.toFixed()}`;
+        accesoriosItem.textContent = `Arbol de Navidad x${cantidadAccesorios}: $${totalAccesorios.toFixed()}`;
         orderList.appendChild(accesoriosItem);
     }
 
