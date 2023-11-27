@@ -108,7 +108,7 @@ function calcularPrecio(tipo, categoria) {
                 case "Gorro con orejas":
                     return 100;
                 case "Gorro con Luces Led":
-                    return 150;
+                    return 300;
                 case "Gorro con cuernos":
                     return 200;
                 default:
